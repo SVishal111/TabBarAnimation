@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    transition: 0.2s linear;
+}
+
+:root {
+    --bg-color: linear-gradient(to bottom, #000, rgb(0, 0, 50));
+    --white: rgba(255, 255, 255, 0.5);
+    --white-hover: rgba(255, 255, 255);
+    --icon-color: rgba(255, 255, 255, 0);
+    --icon-color-hover: rgba(255, 255, 255);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+}
+
+.navBar {
+    height: 100px;
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuList {
+    height: 100%;
+    width: 475px;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* background-color: coral; */
+}
+
+.menuList li {
+    list-style-type: none;
+    width: 100%;
+}
+
+.menuList li a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuList li a i {
+    color: var(--icon-color);
+    /* color: white; */
+    /* text-align: center; */
+    font-size: 50px;
+
+    margin-top: -8px;
+}
+
+.menuList li a:hover i {
+    color: var(--icon-color-hover);
+    /* color: orange; */
+    transition: 0.1s ease-in;
+}
+
+.menuList li a:hover {
+    color: var(--white-hover);
+}
